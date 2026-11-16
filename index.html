@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Architronics — Architecture | Interiors | Spatial Things</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+</head>
+
+<body data-view="home">
+  <!-- Global SVG symbols and filters for architectural textures -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="nz">
+        <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" stitchTiles="stitch" />
+        <feColorMatrix values="0 0 0 0 .55  0 0 0 0 .55  0 0 0 0 .55  0 0 0 .55 0" />
+      </filter>
+      <symbol id="at-core" viewBox="480 630 975 675">
+        <polygon points="486,1146 790,638 790,773 568,1146" />
+        <polygon points="790,638 1095,1146 1013,1146 790,773" />
+        <rect x="1027" y="787" width="419" height="59" />
+        <rect x="1207" y="899" width="59" height="397" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
